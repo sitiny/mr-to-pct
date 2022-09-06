@@ -55,5 +55,9 @@ seg_maths t1w.nii -mul headmask.nii t1w_masked.nii
 ```
 
 
+### TO DO:
+1) Upload trained network somewhere.
+2) Integrate bias correction and head masking into python script.
+
 
 Feedback welcome at siti.yaakub@plymouth.ac.uk
