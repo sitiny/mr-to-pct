@@ -1,5 +1,4 @@
 # MR to pCT for TUS
-=================
 
 This software produces a pseudo-CT image from a T1-weighted MR image for use in acoustic simulations of transcranial ultrasound stimulation (TUS).
 
