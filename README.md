@@ -26,13 +26,7 @@ Works with both NVIDIA GPU and CPU-only platforms.
 
 ### Instructions
 
-The software works best for input T1-weighted MR images with the following specifications:
-1) maximum matrix size: 256 x 256 x 256
-2) voxel size: 1mm isotropic
-3) bias-corrected (e.g. using N4BiasFieldCorrection in ANTs or similar: see https://github.com/ANTsX/ANTs)
-4) noise outside the head masked out 
-
-Clone or download python notebook and trained weights. In cell #6, change the path to your input MR and output pCT images, and the trained weights:
+Clone or download python notebook and trained weights. In cell #6, change the path to point to your input MR image, output pCT image, and the trained network weights:
 ```
 # set input and output data
 input_mr_file = '/home/Researcher/Analysis/mr-to-pct_tests/sub-test01_t1w.nii'
@@ -45,13 +39,21 @@ Run notebook.
 
 This will produce the output pCT image in the specified folder.
 
-### Head mask
+
+### Input to network
+
+The software works best for input T1-weighted MR images with the following specifications:
+1) maximum matrix size: 256 x 256 x 256
+2) voxel size: 1mm isotropic
+3) bias-corrected (e.g. using N4BiasFieldCorrection in ANTs or similar: see https://github.com/ANTsX/ANTs)
+4) noise outside the head masked out
 
 We use the following commands with NiftySeg (https://github.com/KCL-BMEIS/NiftySeg) to create a rough head mask:
 ```
 seg_maths t1w.nii -otsu -dil 2 -smo 3 -thr 0.5 -fill -bin headmask.nii
 seg_maths t1w.nii -mul headmask.nii t1w_masked.nii
 ```
+
 
 
 Feedback welcome at siti.yaakub@plymouth.ac.uk
