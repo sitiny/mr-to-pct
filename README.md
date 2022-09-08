@@ -15,7 +15,7 @@ If you use this software in your own work, please acknowledge the software by ci
 
 ### Platform
 
-Tested on Linux (Ubuntu 20.04.4 LTS) and on macOS (version).  
+Tested on Linux (Ubuntu 20.04.4 LTS) and on macOS Catalina (10.15.7).  
 Works with both NVIDIA GPU and CPU-only platforms.
 
 
