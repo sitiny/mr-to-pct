@@ -36,7 +36,7 @@ You may optionally prepare your T1-weighted MR image. If prep_t1 is set to True,
 prep_t1 = True
 ```
 
-You may also optionally produce an example figure of the MR and pCT produced. If plot_mrct is set to True, an example figure will be produced. 
+You may also optionally produce an example figure of the pCT output. If plot_mrct is set to True, an example figure will be produced. 
 ```
 # Do you want to produce an example plot? yes = True, no = False. 
 plot_mrct = True
