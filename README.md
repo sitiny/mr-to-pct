@@ -37,6 +37,7 @@ prep_t1 = True
 ```
 
 You may also optionally produce an example figure of the MR and pCT produced. If plot_mrct is set to True, an example figure will be produced. 
+```
 # Do you want to produce an example plot? yes = True, no = False. 
 plot_mrct = True
 ```
