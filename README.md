@@ -29,7 +29,7 @@ output_pct_file = '/Users/sitiyaakub/Documents/Analysis/MRtoCT/ForGitHub/sub-tes
 trained_weights = '/Users/sitiyaakub/Documents/Analysis/MRtoCT/ForGitHub/pretrained_net_final_20220825.pth'
 ```
 
-You may optionally prepare your T1-weighted MR image. If prep_t1 is set to True, the T1-weighted MR image will be bias corrected (using ANTs N4BiasFieldCorrection and a head mask will be created).
+You may optionally prepare your T1-weighted MR image. If prep_t1 is set to True, the T1-weighted MR image will be bias corrected (using ANTs N4BiasFieldCorrection) and backgound noise outside the head will be masked out.
 ```
 # Do you want to prepare the t1 image? This will perform bias correction and create a head mask
 # yes = True, no = False. Output will be saved to <mr_file>_prep.nii
