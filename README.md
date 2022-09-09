@@ -19,7 +19,9 @@ Works with both NVIDIA GPU and CPU-only platforms.
 
 Install dependencies (see above). 
 
-Clone or download python notebook, utility scripts, trained weights, and example dataset. In cell #2, change the path to point to your input MR image, output pCT image, and the location where you saved the trained network weights:
+Clone or download python notebook, utility scripts, trained weights, and example dataset. 
+
+In cell #2 of the python notebook mr-to-pct_infer.ipynb, change the path to point to your input MR image, output pCT image, and the location where you saved the trained network weights:
 ```
 # Set data file paths
 input_mr_file = '/Users/sitiyaakub/Documents/Analysis/MRtoCT/ForGitHub/sub-test01_t1w.nii'
