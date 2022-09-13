@@ -72,7 +72,3 @@ If you use our MR to pCT method in your own work, please acknowledge us by citin
 Please also consider citing ANTsPy and MONAI (see the websites for details).
 
 Feedback welcome at siti.yaakub@plymouth.ac.uk
-
-### TO DO:
-1) Upload trained network somewhere.
-
