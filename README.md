@@ -67,7 +67,7 @@ The rationale and principle are described in detail in the following paper.
 >    Siti N. Yaakub, Tristan White, Eric Kerfoot, Lennart Verhagen, Alexander Hammers, Elsa Fouragnan, 
 >    "Pseudo-CTs from T1-weighted MRI for planning of low-intensity transcranial focused ultrasound neuromodulation". (in preparation)
 
-If you use our MR to pCT method in your own work, please acknowledge us by citing the above, when it becomes available.
+If you use our MR to pCT method in your own work, please acknowledge us by citing the above paper and the repository (see "Cite this repository" in the About panel on the top right of this page).
 
 Please also consider citing ANTsPy and MONAI (see the websites for details).
 
