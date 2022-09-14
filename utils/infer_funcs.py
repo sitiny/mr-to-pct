@@ -8,7 +8,6 @@ from monai.transforms import (
 from monai.data import write_nifti
 from utils.netdef import ShuffleUNet
 import numpy as np
-import SimpleITK as sitk
 import ants
 import matplotlib.pyplot as plt
 import matplotlib.colorbar
