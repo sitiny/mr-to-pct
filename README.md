@@ -59,6 +59,10 @@ The software works best for input T1-weighted MR images with the following speci
 
 The bias correction and noise masking can be optionally applied within the script by setting `prep_t1 = True`.
 
+## Troubleshooting
+
+If you have problems with the ANTsPy installation, you can try running it without the ANTs bias-correction and head masking. To do this, change the third line of the mr-to-pct_infer.ipynb to: `from utils.infer_funcs_noants import do_mr_to_pct`. 
+This will work best if you supply a bias-corrected and head masked T1-weighted MR image.
 
 ## Citing this work
 
