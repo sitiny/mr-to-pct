@@ -5,7 +5,7 @@ This script produces a pseudo-CT image from a T1-weighted MR image for use in ac
 
 ## Platform
 
-Tested on Linux (Ubuntu 20.04.4 LTS) and on macOS Catalina (10.15.7).  
+Tested on Linux (Ubuntu 20.04.4 LTS) and on macOS Catalina (10.15.7; Intel i5) and Monterey (12.4; Apple M1 Pro).  
 Works with both NVIDIA GPU and CPU-only platforms.
 
 
