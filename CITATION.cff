@@ -6,6 +6,7 @@ authors:
   orcid: "https://orcid.org/0000-0001-5084-1973"
 title: "mr-to-pct for TUS acoustic simulations"
 version: 1.0.0
-doi: 
-date-released: 2022-09-13
+doi: 10.5281/zenodo.7110246
+date-released: 2022-09-24
 url: "https://github.com/sitiny/mr-to-pct"
+
