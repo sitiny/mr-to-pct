@@ -69,7 +69,7 @@ This will work best if you supply a bias-corrected and head masked T1-weighted M
 The rationale and principle are described in detail in the following paper.
 
 >    Siti N. Yaakub, Tristan A. White, Eric Kerfoot, Lennart Verhagen, Alexander Hammers, Elsa F. Fouragnan, 
->    "Pseudo-CTs from T1-weighted MRI for planning of low-intensity transcranial focused ultrasound neuromodulation: an open-source tool". (submitted to arXiv)
+>    "Pseudo-CTs from T1-weighted MRI for planning of low-intensity transcranial focused ultrasound neuromodulation: an open-source tool". arXiv, 2022. https://doi.org/10.48550/arXiv.2209.12031
 
 If you use our MR to pCT method in your own work, please acknowledge us by citing the above paper and the repository [![DOI](https://zenodo.org/badge/463507314.svg)](https://zenodo.org/badge/latestdoi/463507314)
 
