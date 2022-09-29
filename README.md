@@ -19,7 +19,7 @@ Works with both NVIDIA GPU and CPU-only platforms.
 
 Install dependencies (see above). 
 
-Clone or download the repository, and trained weights (pretrained_net_final_20220825.pth) and example dataset (sub-test01_t1w.nii) available here: https://osf.io/e7sz9/.
+Clone or download the repository, trained weights (https://osf.io/download/c3w98/) and example dataset (https://osf.io/download/xhne5/).
 
 In cell #2 of the python notebook mr-to-pct_infer.ipynb, change the path to point to your input MR image, output pCT image, and the location where you saved the trained network weights:
 ```
