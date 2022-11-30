@@ -1,4 +1,4 @@
-#!/usr/bin/python3
+#!/usr/bin/env python
 # mrtopct_script.py
 # Runs mr to pct as a python script
 # Inputs:
