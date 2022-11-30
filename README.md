@@ -49,17 +49,20 @@ This will produce the output pCT image in the specified file path.
 
 ## Input to network
 
-The software works best for input T1-weighted MR images with the following specifications:
-1) scanner: Siemens Prisma 3T
-2) acquisition parameters: acquired in sagittal plane, 2100 ms repetition time (TR), 2.26 ms echo time (TE), 900 ms inversion time (TI), 8° flip angle (FA), GRAPPA acceleration factor of 2, and 1 mm<sup>3</sup> voxel size
-2) maximum matrix size: 256 x 256 x 256
-3) voxel size: 1mm isotropic
-4) bias-corrected (e.g. using N4BiasFieldCorrection in ANTs or similar: see https://github.com/ANTsX/ANTs)
-5) noise outside the head masked out
+The software works best for input T1-weighted MR images in the NIfTI file format with the following specifications:
+1) RAS+ orientation
+2) scanner: Siemens Prisma 3T
+3) acquisition parameters: acquired in sagittal plane, 2100 ms repetition time (TR), 2.26 ms echo time (TE), 900 ms inversion time (TI), 8° flip angle (FA), GRAPPA acceleration factor of 2, and 1 mm<sup>3</sup> voxel size
+4) maximum matrix size: 256 x 256 x 256
+5) voxel size: 1mm isotropic
+6) bias-corrected (e.g. using N4BiasFieldCorrection in ANTs or similar: see https://github.com/ANTsX/ANTs)
+7) noise outside the head masked out
 
 The bias correction and noise masking can be optionally applied within the script by setting `prep_t1 = True`.
 
 ## Troubleshooting
+
+If your image is not in RAS+ orientation, you need to reorient it. Several tools are available to reorient NIfTI format images e.g. FSL's fslreorient2std (see: https://fsl.fmrib.ox.ac.uk/fsl/fslwiki/Orientation%20Explained) or NiBabel's as_closest_canonical (see: https://nipy.org/nibabel/image_orientation.html).
 
 If you have problems with the ANTsPy installation, you can try running it without the ANTs bias-correction and head masking. To do this, change the third line of the mr-to-pct_infer.ipynb to: `from utils.infer_funcs_noants import do_mr_to_pct`. 
 This will work best if you supply a bias-corrected and head masked T1-weighted MR image.
