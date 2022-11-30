@@ -26,7 +26,7 @@ saved_model = torch.load("pretrained_net_final_20220825.pth", map_location=devic
 prep_t1 = True
 
 # Do you want to produce an example plot? yes = True, no = False.
-plot_mrct = True
+plot_mrct = False
 
 print('T1w MR input file path: {}'.format(input_mr_file))
 print('pCT output file path: {}'.format(output_pct_file))
