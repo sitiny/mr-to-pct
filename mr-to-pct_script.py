@@ -1,5 +1,5 @@
 #!/usr/bin/env python
-# mrtopct_script.py
+# mr-to-pct_script.py
 # Runs mr to pct as a python script
 # Inputs:
 #   input_mr_file       Filename of your T1w MRI including full path
