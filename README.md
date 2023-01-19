@@ -1,6 +1,6 @@
 # MR to pCT for TUS
 
-This script produces a pseudo-CT image from a T1-weighted MR image for use in acoustic simulations of transcranial ultrasound stimulation (TUS).
+This script produces a pseudo-CT image from a T1-weighted MR image for use in acoustic simulations of transcranial ultrasound stimulation (TUS). See also https://github.com/sitiny/BRIC_TUS_Simulation_Tools.
 
 
 ## Platform
