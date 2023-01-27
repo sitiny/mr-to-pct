@@ -62,7 +62,7 @@ def do_inference_3D(net, x, device, dims=(256,256), patch_size=(256,256,32), ste
 def do_prep_t1(img_file):
     img = ants.image_read(img_file)
     img_n4 = ants.n4_bias_field_correction(img)
-    img_tmp = img_n4.otsu_segmentation(k=1) # otsu_segmentation
+    img_tmp = img_n4.otsu_segmentation(k=3) # otsu_segmentation
     img_tmp = ants.multi_label_morphology(img_tmp, 'MD', 2) # dilate 2
     img_tmp = ants.smooth_image(img_tmp, 3) # smooth 3
     img_tmp = ants.threshold_image(img_tmp, 0.5) # threshold 0.5
