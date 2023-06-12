@@ -127,3 +127,9 @@ dmypy.json
 
 # Pyre type checker
 .pyre/
+
+# Mac OS specific
+utils/.DS_Store
+.DS_Store
+pretrained_net_final_20220825.pth
+mr-to-pct_infer_update.ipynb
