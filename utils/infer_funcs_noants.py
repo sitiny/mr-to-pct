@@ -5,7 +5,7 @@ from monai.transforms import (
     AddChannel, Compose, LoadImage, EnsureChannelFirst,
     ScaleIntensity, ToTensor, HistogramNormalize, ResizeWithPadOrCrop
 )
-from monai.data import write_nifti, NibabelWriter
+from monai.data import NibabelWriter
 from utils.netdef import ShuffleUNet
 import numpy as np
 import matplotlib.pyplot as plt
@@ -72,7 +72,7 @@ def do_mr_to_pct(input_mr_file, output_pct_file, saved_model, device, prep_t1, p
 
     # load images
     print('Loading MR image: {}'.format(input_mr_file))
-    t1_arr, t1_meta = LoadImage()(input_mr_file)
+    t1_arr, t1_meta = LoadImage(image_only=False)(input_mr_file)
     orig_t1_arr = copy.copy(t1_arr)
     t1_arr = t1trans_test(t1_arr)
     t1_arr = t1_arr[0]
