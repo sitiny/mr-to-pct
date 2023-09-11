@@ -5,7 +5,7 @@ from monai.transforms import (
     AddChannel, Compose, LoadImage, EnsureChannelFirst,
     ScaleIntensity, ToTensor, HistogramNormalize, ResizeWithPadOrCrop
 )
-from monai.data import write_nifti, NibabelWriter
+from monai.data import NibabelWriter
 from utils.netdef import ShuffleUNet
 import numpy as np
 import ants
@@ -89,9 +89,9 @@ def do_mr_to_pct(input_mr_file, output_pct_file, saved_model, device, prep_t1, p
     if prep_t1:
         print('Preparing MR image: bias correction and masking...')
         do_prep_t1(input_mr_file)
-        t1_arr, t1_meta = LoadImage()((os.path.splitext(input_mr_file)[0] + '_prep.nii'))
+        t1_arr, t1_meta = LoadImage(image_only=False)((os.path.splitext(input_mr_file)[0] + '_prep.nii'))
     else:
-        t1_arr, t1_meta = LoadImage()(input_mr_file)
+        t1_arr, t1_meta = LoadImage(image_only=False)(input_mr_file)
     orig_t1_arr = copy.copy(t1_arr)
     t1_arr = t1trans_test(t1_arr)
     t1_arr = t1_arr[0]
