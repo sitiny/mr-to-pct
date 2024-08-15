@@ -11,7 +11,7 @@ Works with both NVIDIA GPU and CPU-only platforms.
 
 ## Dependencies
 
-* [MONAI] (https://monai.io/)
+* [MONAI] (https://monai.io/) -- last known version that works is 1.1
 * [ANTsPy] (https://github.com/ANTsX/ANTsPy)
 
 
